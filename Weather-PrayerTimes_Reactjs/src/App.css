@@ -1,0 +1,19 @@
+
+.bg-img{
+    background-image: url(../public/img/mosque7_generated12.png) ,url(../public/img/pngtree-islamic-decorations-flower-circle-png-image_68544911.png);
+    background-repeat: no-repeat;
+    background-position: right, left;
+    background-size: contain;
+    background-color: #D8D8D8;
+}
+
+@media screen and (max-width: 480px){
+    .bg-img {
+    background-position: bottom, top    ;
+    }
+}
+@media screen and (max-width: 768px){
+    .bg-img {
+    background-position: bottom,top    ;
+    }
+}
