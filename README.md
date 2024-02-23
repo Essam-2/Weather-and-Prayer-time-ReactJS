@@ -1,1 +1,0 @@
-# Weather-and-Prayer-time-ReactJS
