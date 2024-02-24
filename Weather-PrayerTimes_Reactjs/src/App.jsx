@@ -6,6 +6,7 @@ import PrayerTimes from "./components/PrayerTimes";
 import axios from "axios";
 import BackgroundImage from "./components/backgroundImage";
 import Modal from "./components/modal";
+import Footer from "./components/Footer";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -99,6 +100,9 @@ function App() {
       <Weather weatherInfo={weatherInfo} />
       {/* <Prayer Times */}
       <PrayerTimes prayerInfo={prayerInfo} />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
