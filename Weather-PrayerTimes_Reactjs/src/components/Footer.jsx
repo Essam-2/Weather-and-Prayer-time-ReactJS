@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <div className="absolute bottom-0 w-full text-center pb-4 ">
-      Created by: Essam Anwar - {currentYear}
+      Created by: Essam Anwar - @{currentYear}
     </div>
   );
 };
