@@ -58,18 +58,18 @@ function App() {
   return (
     <div className="relative w-screen h-screen">
       <BackgroundImage data={weatherInfo} />
-      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-between px-40 w-full items-center">
-        <div className="flex items-center justify-center">
+      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 xl:flex xl:justify-between xl:items-center xl:flex-row xl:px-40 sm:flex sm:flex-col sm:items-center sm:justify-center w-full">
+        <div className="xl:flex xl:items-center xl:flex-row xl:justify-center sm:flex sm:flex-col sm:items-center sm:justify-center w-full">
           <img
             src={weatherInfo?.current?.condition?.icon || ""}
-            className="w-60 h-60 mr-4 "
+            className="2xl:w-60 2xl:h-60 xl:h-56 xl:w-56 xl:mr-4 sm:h-40 sm:w-40"
             alt="Cloudy"
           />
-          <div className="flex items-end ">
-            <h1 className="text-black font-bold text-9xl">
+          <div className="xl:flex items-end w-full sm:text-center sm:mb-5">
+            <h1 className="text-black font-bold 2xl:text-9xl xl:text-6xl sm:text-2xl">
               {weatherInfo?.location?.name || ""}
             </h1>
-            <p className="text-black text-5xl mb-5">
+            <p className="text-black 2xl:text-5xl xl:text-3xl 2xl:mb-5">
               ,{weatherInfo?.location?.country || ""}
             </p>
           </div>
@@ -79,7 +79,7 @@ function App() {
           <TERipple rippleColor="">
             <button
               type="button"
-              className="glass-card-btn rounded-lg shadow-lg p-6 text-black font-medium uppercase  leading-normal transition duration-150 ease-in-out hover:bg-neutral-50 focus:bg-neutral-50 focus:outline-none focus:ring-0 active:bg-bg-neutral-50"
+              className="glass-card-btn rounded-lg shadow-lg 2xl:p-6 xl:p-4 sm:p-2 sm:text-xs xl:text-base text-black font-medium uppercase  leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0 active:bg-bg-neutral-50"
               onClick={() => setShowModal(true)}
             >
               Change Location
