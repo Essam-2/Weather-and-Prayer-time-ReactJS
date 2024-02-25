@@ -79,7 +79,7 @@ function App() {
           <TERipple rippleColor="">
             <button
               type="button"
-              className="glass-card-btn rounded-lg shadow-lg 2xl:p-6 xl:p-4 sm:p-2 sm:text-xs xl:text-base text-black font-medium uppercase  leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0 active:bg-bg-neutral-50"
+              className="glass-card-btn rounded-lg shadow-lg 2xl:p-6 xl:p-4 sm:p-2 sm:text-xs xl:text-base 2xl:text-base 2xl:w-52 xl:w-48 text-black font-medium uppercase  leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0 active:bg-bg-neutral-50"
               onClick={() => setShowModal(true)}
             >
               Change Location
