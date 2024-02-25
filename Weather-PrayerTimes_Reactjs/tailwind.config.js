@@ -6,6 +6,17 @@ export default {
     "./node_modules/tw-elements-react/dist/js/**/*.js",
   ],
   theme: {
+    screens: {
+      sm: "320px",
+      md: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      xl: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      "2xl": "1680px",
+      // => @media (min-width: 1280px) { ... }
+    },
     extend: {
       colors: {
         main: "#245953",
