@@ -21,6 +21,7 @@ const BackgroundImage = ({ data = {} }) => {
         return "/img/thunderstorm.jpg";
       case "snow":
       case "ice pellets":
+      case "blowing snow":
         return "/img/snowing.jpg";
       case "mist":
       case "fog":
