@@ -3,7 +3,9 @@ import React from "react";
 const PrayerTimes = ({ prayerInfo = {} }) => {
   return (
     <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-      <h2 className=" text-2xl text-black font-bold m-3">Prayer Times</h2>
+      <h2 className=" text-2xl text-black font-bold m-3 xl:pt-20">
+        Prayer Times
+      </h2>
       <div className="flex justify-center items-center gap-3">
         <div className="glass-card bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-6">
           <div className="content">
